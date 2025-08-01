@@ -1,4 +1,4 @@
-# GitGud
+# GitGud (Still in Development)
 
 A custom Neovim colorscheme built with Tree-sitter and Lua. Inspired by GitHub’s syntax highlighting.
 
