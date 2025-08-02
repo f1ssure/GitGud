@@ -2,6 +2,8 @@
 
 A custom Neovim colorscheme built with Tree-sitter and Lua. Inspired by GitHub’s syntax highlighting.
 
+For now, the syntax highlighting works for Go files. More is on the way.
+
 ## Features
 
 - Tree-sitter-based highlighting
@@ -45,7 +47,7 @@ vim.cmd("colorscheme gitgud")
 
 ### Final touches
 
-Add these lines in your highlights.scm
+Add these lines in your go/highlights.scm
 ```
 ((field_identifier) @property (#set! priority 101))
 ((identifier) @special (#set! priority 101))
