@@ -42,3 +42,12 @@ In your init.lua
 ```lua
 vim.cmd("colorscheme gitgud")
 ```
+
+### Final touches
+
+Add these lines in your highlights.scm
+```
+((field_identifier) @property (#set! priority 101))
+((identifier) @special (#set! priority 101))
+((type_identifier) @special (#set! priority 101))
+```
