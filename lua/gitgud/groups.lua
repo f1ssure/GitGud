@@ -8,19 +8,30 @@ return  {
 	String		= { fg = P.sky },
 	Conditional = { fg = P.red },
 	PreProc		= { fg = P.red },
+	Special		= { fg = P.red },
 	Keyword		= { fg = P.red},
 	Operator	= { fg = P.blue },
 	Type		= { fg = P.fg},
+	Function	= { fg = P.fg },
 
 	-- Tree-sitter 
 	-- Go
 	["@variable"]		= { fg = P.fg },
-	["@property"]		= { fg = P.blue },
+	["@property.go"]	= { fg = P.blue },
 	["@keyword"]		= { fg = P.red },
 
-	["@keyword.import.go"] = { link = "@keyword" },
+	["@keyword.import.go"]	 = { link = "@keyword" },
 	["@keyword.function.go"] = { link = "@keyword" },
-	["@keyword.type.go"] = { link = "@keyword" },
-	["@module.go"] = { link = "Normal" },
+	["@keyword.type.go"]	 = { link = "@keyword" },
+	["@constant.builtin.go"] = { fg = P.blue },
+	["@module.go"]			 = { fg = P.fg },
+	["@type.go"]			 = { fg = P.fg },
+	["@special"]			 = { fg = P.fg },
 
+	-- Lua
+	["@operator.lua"]		 = { fg = P.red },
+	["@variable.member.lua"] = { fg = P.lavender },
+
+	-- JSON
+	
 }
