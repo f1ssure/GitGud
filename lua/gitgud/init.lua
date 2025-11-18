@@ -1,6 +1,7 @@
 local M = {}
 
 M.palette = {
+	none	 = "none",
 	fg		 = "#f0f6fc",
 	bg		 = "#0d1117",
 	comment	 = "#9198a1",
