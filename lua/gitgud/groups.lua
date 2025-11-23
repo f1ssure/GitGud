@@ -2,7 +2,7 @@ local P = require("gitgud").palette
 
 return  {
 	-- UI
-	Normal		= { fg = P.fg, bg = "none" },
+	Normal		= { fg = P.fg, bg = P.bg},
 	netrwDir	= { fg = P.orange },
 	Comment		= { fg = P.comment },
 	-- CursorLine	= { bg = "#1c1c1c" },

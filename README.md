@@ -14,13 +14,21 @@ For now, the syntax highlighting works for Go files. More is on the way.
 
 ### Using lazy.nvim
 ```lua
-{
-  "f1ssure/GitGud",
-  priority = 1000,
-  lazy = false,
-  config = function()
-    vim.cmd("colorscheme gitgud")
-  end
+-- lua/plugins/gitgud.lua
+return {
+	"f1ssure/gitgud",
+	name = "gitgud",
+	config = function()
+		vim.cmd("colorscheme gitgud")
+
+		-- optionally comment out the line below
+		disable_background = true
+
+		if disable_background then
+			vim.cmd([[hi Normal guibg=NONE ctermbg=NONE]])
+			vim.cmd([[hi NormalFloat guibg=NONE ctermbg=NONE]])
+		end
+	end
 }
 ```
 
