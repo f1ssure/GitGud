@@ -7,6 +7,7 @@ return  {
 	Comment		= { fg = P.comment },
 	-- CursorLine	= { bg = "#1c1c1c" },
 	String		= { fg = P.sky },
+	Statement	= { fg = P.red },
 	Conditional = { fg = P.red },
 	PreProc		= { fg = P.red },
 	Special		= { fg = P.red },
