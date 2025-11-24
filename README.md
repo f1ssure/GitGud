@@ -61,3 +61,6 @@ Add these lines in your go/highlights.scm
 ((identifier) @special (#set! priority 101))
 ((type_identifier) @special (#set! priority 101))
 ```
+
+#### For macOS
+`go/highlights.scm` is in `~/.1ocal/share/nvim/lazy/nvim-treesitter/queries/go/highlights.scm`
