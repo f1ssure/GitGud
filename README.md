@@ -56,11 +56,18 @@ vim.cmd("colorscheme gitgud")
 ### Final touches
 
 Add these lines in your go/highlights.scm
+
 ```
+;; extends
 ((field_identifier) @property (#set! priority 101))
 ((identifier) @special (#set! priority 101))
 ((type_identifier) @special (#set! priority 101))
 ```
 
-#### For macOS
+#### For macOS (and Linux probably)
+
+##### lazy.nvim
+`go/highlights.scm` is in `~/.config/nvim/after/queries/go`
+
+#### if installed manually
 `go/highlights.scm` is in `~/.1ocal/share/nvim/lazy/nvim-treesitter/queries/go/highlights.scm`
